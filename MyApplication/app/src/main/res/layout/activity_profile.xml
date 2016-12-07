@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#8BC06A"
+    tools:context="com.example.alma19.myapplication.ProfileActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true">
+
+    <TextView
+        android:id="@+id/textviewUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="Name:   "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your full name"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="Age:       "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your age"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="Gender: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/editTextGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your gender"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="Quote:   "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/editTextQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your quote"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="Social Media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Facebook"/>
+
+        <EditText
+            android:id="@+id/editTextTwitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Twitter"/>
+
+        <EditText
+            android:id="@+id/editTextInstagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Instagram"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editTextEmail"
+            android:hint="Email"/>
+        
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e97748"
+        android:textColor="#ffffff"
+        android:text="Save Information"/>
+
+
+        <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewUserEmail"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="46dp"
+        android:background="#ffffff"
+        android:textColor="#8BC06A"
+        android:id="@+id/buttonLogout" />
+
+
+
+        <TextView
+            android:text="This is where the text will go"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="72dp"
+            android:id="@+id/textViewName" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>
